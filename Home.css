@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #f44100;
+    --main: #fff0dc;
+    --main-back: rgb(255, 252, 248);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--main-back);
+}
+
+.first-header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.first-header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .7em 2.5em;
+    gap: 1rem;
+    z-index: 999;
+}
+
+.first-header a{
+    text-decoration: none;
+    color: white;
+}
+
+.first-header i{
+    font-size: 1.3rem;
+}
+
+.second-header{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.020);
+    -webkit-backdrop-filter: blur(1em);
+    backdrop-filter: blur(.6em);
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .8em 2.5em;
+}
+
+header h1{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+}
+
+header h1 span{
+    color: var(--primary);
+}
+
+nav ul{
+    display: flex;
+    gap: 5em;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 200;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Section 1 */
+
+.first-page{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.673), rgba(0, 0, 0, 0.66)), url(./images/924471\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about{
+    border: 1px solid var(--primary);
+    padding: 0 1em;
+    color: var(--primary);
+    border-radius: .4em;
+    transition: .5s;
+}
+
+.about:hover{
+    background: var(--primary);
+    color: white;
+    border: none;
+}
+
+.burger{
+    display: none;
+}
+
+.hero-section{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-cta{
+    width: 80%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-cta h1{
+    font-size: 3.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 auto .7em auto;
+}
+
+.hero-cta p{
+   width: 80%;
+   letter-spacing: 1px;
+   margin: 0 auto;
+   font-size: 1rem;
+   color: rgb(234, 234, 234);
+   font-weight: 500;
+}
+
+.button{
+    width: 90%;
+    margin: 3em auto;
+}
+
+.button button{
+    padding: .7em 1.5em;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: .2em;
+    cursor: pointer;
+    background: var(--primary);
+    font-weight: 500;
+    color: white;
+    transition: transform .5s, box-shadow .5s;
+    text-transform: uppercase;
+}
+
+.button button:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 15px var(--primary);
+}
+
+
+
+
+/* Second-page */
+.section-title{
+    padding: 2em 1em;
+    width: 40em;
+    text-align: center;
+    margin: 2em auto .3em auto;
+}
+
+.section-title h2{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.section-title p{
+    font-weight: 300;
+}
+
+.section-content{
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    padding: 1em;
+}
+
+.content-item-img{
+    width: 48%;
+}
+
+.content-item-img img{
+    width: 100%;
+    height: 27em;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .5s;
+}
+
+.content-item{
+    width: 40%;
+    height: 27%em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 1.4s, transform 1.5s;
+}
+
+.content-item h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .6em;
+}
+
+.content-item p{
+    color: rgb(72, 72, 72);
+    margin-bottom: 1.4em;
+    font-size: .9rem;
+}
+
+.content-item button{
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8em 1em;
+    font-size: 1.1rem;
+    border: none;
+    color: white;
+    background: var(--primary);
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+
+
+
+/* third-page */
+.third-page{
+    margin-top: 4.5em;
+    padding: 2em;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.679), rgba(0, 0, 0, 0.642)), url(./images/dark-server-racks-computer-network-security-server-room-data-center-generative-ai.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40em;
+}
+
+.container-2{
+    display: flex;
+    gap: 8em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container-2 i{
+    color: var(--primary);
+    font-size: 7rem;
+    font-weight: 300;
+}
+
+.container-2 h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.container-2 p{
+    font-size: 1.1rem;
+    color: rgb(208, 208, 208);
+    font-weight: 200;
+}
+
+.wifi, .voip{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 6em 0;
+    border-radius: .5em;
+}
+
+.wifi{
+    background: linear-gradient(0deg, rgba(50, 50, 50, 0.735), rgba(67, 67, 67, 0.672)), url(./images/medium-shot-woman-holding-laptop.jpg);
+    background-size: cover;
+}
+
+.voip{
+    background: linear-gradient(0deg, rgba(50, 50, 50, 0.735), rgba(67, 67, 67, 0.672)), url(./images/Screenshot\ 2023-05-17\ at\ 12.19.56.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* fourth-page */
+.fourth-page{
+    margin-top: 3em;
+}
+
+.container-3{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 3em 2em 3em 2em;
+    color: var(--main-back);
+    overflow: hidden;
+}
+
+.container-3 p{
+    line-height: 1.8em;
+}
+
+.orange-container{
+    position: absolute;
+    background: var(--primary);
+    width: 48em;
+    height: 100%;
+    z-index: -10;
+    left: -10%;
+    top: 0;
+    transform: skew(-30deg);
+    transition: width 1s;
+}
+
+.about-title{
+    width: 40%;
+}
+
+.about-title h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.hidden-title {
+    width: 45%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s .4s;
+}
+
+.hidden-title a button{
+    background: none;
+    border: 1px solid white;
+    padding: .8em 1.5em;
+    margin-top: 1.2em;
+    font-size: 1.1rem;
+    border-radius: .3em;
+    color: var(--main-back);
+    cursor: pointer;
+}
+
+.appear .orange-container{
+    width: 115.5em;
+    opacity: 1;
+}
+
+.appear .hidden-title{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* fifth-page */
+
+.fifth-page{
+    padding: 5em 0;
+    position: relative;
+}
+
+.container-4 h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: .2em;
+}
+
+.container-4 p{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 2.5em;
+    font-weight: 300;
+}
+
+.internet{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(30px);
+    pointer-events: none;
+    transition: .8s;
+}
+
+.appear-img{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.internet .internet-info{
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.143), rgba(0, 0, 0, 0.143)), url(./images/blue-optic-fiber-with-ethernet-cable.jpg);
+    width: 25em;
+    height: 16em;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.internet-info h2{
+    font-size: 1.2rem;
+    padding: 1em;
+    font-weight: 300;
+}
+
+.internet .img2{
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.143), rgba(0, 0, 0, 0.143)), url(./images/hologram-projector-screen-with-cloud-system-technology.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.internet .img3{
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.143), rgba(0, 0, 0, 0.143)), url(./images/happy-man-using-his-tablet-home-couch.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12em;
+    align-items: center;
+}
+
+.black-line{
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    background: black;
+    top: 72%;
+    left: 0;
+}
+
+.contact p{
+    margin: 0;
+}
+
+.contact a{
+    color: white;
+    font-size: 1.7rem;
+    background: var(--primary);
+    padding: .3em .5em .2em;
+    border-radius: 50%;
+}
+
+/* footer */
+
+footer{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.779)), url(./images/light-trails-buildings.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: .2em;
+}
+
+.container-5{
+    padding: 5em 1em 3em;
+}
+
+.container-5 a{
+    color: rgb(194, 194, 194);
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.us{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.us h2{
+    font-weight: 400;
+    font-size: 2rem;
+    position: relative;
+}
+
+.us h2:after{
+    content: '';
+    width: 2em;
+    position: absolute;
+    height: 2px;
+    background: #f44100;
+    bottom: -1%;
+    left: 0;
+    border-radius: .6em;
+}
+
+.us-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials i{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.socials i:hover{
+    color: var(--primary);
+}
+
+.touch i{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.touch p{
+    color: rgb(194, 194, 194);
+    font-weight: 200;
+}
+
+.container-6{
+    padding: 1em;
+}
+
+.copy-right{
+    margin-top: 4em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.copy-right h1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.copy-right span{
+    color: var(--primary);
+}
+
+.copy-right p{
+    font-weight: 200;
+}
